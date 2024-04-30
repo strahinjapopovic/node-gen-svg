@@ -52,7 +52,7 @@ Application `node-gen-svg` or Node Generator SVG files application provides simp
 [![GitHub](https://img.shields.io/badge/logo-GitHub-white?logo=github&logoColor=black&style=flat&label=node-gen-svg&labelColor=white&color=red)](https://github.com/strahinjapopovic/node-gen-svg)
 
 ## Git Bash Terminal setting up origin main
-[<img src="./app/screenshots/gitbash-operational-state-dir.PNG" width="1200" alt="Git Bash Terminal screenshot." />](./app/screenshots/gitbash-operational-state-dir.PNG)
+[<img src="./images/screenshots/gitbash-cli-remote-origin-main.PNG" width="1200" alt="Git Bash Terminal screenshot." />](./images/screenshots/gitbash-cli-remote-origin-main.PNG)
 
 <a id="installation-process"></a>
 ## Installation Process
@@ -186,7 +186,7 @@ npm run test
 Command npm run test will use `~/node-gen-svg/lib/class>` directory in which we have a class and constructor parameters and processing file `~/node-gen-svg/lib/shapes-test.js` which tests our classes, constructor, parameters and functions. Output are as follows:
 
 ### Test PASSED
-[<img src="./app/screenshots/gitbash-jest-test-output-passed-ii.PNG" width="1200" alt="Git Bash screenshot." />](./app/screenshots/gitbash-jest-test-output-passed-ii.PNG)
+[<img src="./images/screenshots/gitbash-cli-jest-test-pass.PNG" width="1200" alt="Git Bash screenshot." />](./images/screenshots/gitbash-cli-jest-test-pass.PNG)
 
 <a id="demonstration-on-youtube"></a>
 ## Demonstration on [YouTube](https://youtu.be/y8kfGvOxd2I)
