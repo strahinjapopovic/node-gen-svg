@@ -45,7 +45,7 @@
 <a id="description-info"></a>
 ## Description Info
 
-Application `node-gen-svg` or Node Generator SVG files application provides simple graphical interface for creating trigonometry shapes with text and colors as a resulting output to help developers creating logos and icons. It is developed by using `node.js v22.0.0` JavaScript runtime environment, `Node Package Manager npm-v10.5.1` public registry and `inquirer-v9.2.20` question-answer handler. Application can be invoked from `~/app>` directory by using bash terminal command `$ node index.js`.
+Application `node-gen-svg` or Node Generator SVG files application provides simple graphical interface for creating trigonometry shapes with text and colors as a resulting output to help developers creating logos and icons. It is developed by using `node.js v22.0.0` JavaScript runtime environment, `Node Package Manager npm-v10.5.1` public registry and `inquirer-v9.2.20` question-answer handler. Application can be invoked from `~/node-gen-svg>` directory by using bash terminal command `$ node index.js`.
 
 <a id="github-repository"></a>
 ## GitHub Repository 
@@ -66,8 +66,26 @@ npm init -y
 npm install inquirer@9.2.20
 node index.js # after installation application is invoked by this line
 ```
-Alternativelly, you can run git, curl or wget installation process on CLI terminal (Linux based CLI) to install Node Version Manager (nvm-v0.39.7) at first. After installing NVM you can install Node.js version at your choice, the latest one is v22.0.0. Node.js instalation process will install Node Package Manager (npm) by default npm-v10.5.0 or npm-v10.5.1 depends on node version installed. Last part is to install inquirer-v8.2.4 or any other inquirer-version lower then inquirer-v9. If you wish to install inquirer version v9 or higher then you will have to make some changes in the package.jason file and init some auto load processes since version higher of v9 are based on esm an advanced ECMAScript module loader. For information about inqirer, esm and versions available, reffer to [inquirer](https://www.npmjs.com/package/inquirer) and [esm](https://www.npmjs.com/package/esm) official website.
+Alternativelly, you can run git, curl or wget installation process on CLI terminal (Linux based CLI) to install Node Version Manager (nvm-v0.39.7) at first. After installing NVM you can install Node.js version at your choice, the latest one is v22.0.0. Node.js instalation process will install Node Package Manager (npm) by default npm-v10.5.0 or npm-v10.5.1 depends on node version installed. Last part is to install inquirer-v9.2.20 and not inquirer-version lower then inquirer-v9. Current version inquirer-v9.2.20 is based on esm an advanced ECMAScript module loader which. For information about inqirer, esm and versions available, reffer to [inquirer](https://www.npmjs.com/package/inquirer) and [esm](https://www.npmjs.com/package/esm) official website.
 
+### Difference between inquirer versions about imports / exports
+```javascript
+// inquirer-v9.2.20
+import inquirer from 'inquirer';
+import fs from 'fs/promises';
+
+// some code goes here...
+
+export default render;
+
+// inquirer-v8 and lower
+const inquirer = require('inquirer');
+const fs = require('fs/promiss');
+
+// some code goes here...
+
+module.exports = render;
+```
 ## CURL Install Node.js®
 Below is installation command that should instoller run using curl:
 ```bash
